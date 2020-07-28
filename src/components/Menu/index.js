@@ -1,27 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/logo.png';
 import './Menu.css';
-import ButtonLink from './components/ButtonLink';
-//import Button from '../Button'
+//import ButtonLink from './components/ButtonLink';
+import Button from '../Button'
 
 function Menu() {
     return (
         <nav className="Menu">
-            <a href="/">
+            <Link to="/">
                 <img src={Logo} className="Logo" alt="DevFlix Logo"/>
-            </a>
+            </Link>
 
+            {/*
             [Componente Normal]
-            <ButtonLink href="/" className="ButtonLink">
+            <ButtonLink href="/cadastro/video" className="ButtonLink">
                 Novo Vídeo
             </ButtonLink>
+            */}
 
-            {/*\
             [Componente feito com Styled Componente e mesmo sendo um button, o "as" fas ele se comportar como a tag "a"]
-            <Button as="a" href="/" className="ButtonLink">
+            <Button as={Link} to="/cadastro/video" className="ButtonLink">
                 Novo Vídeo
             </Button>
-            \*/}
         </nav>
     );
 }

@@ -1,0 +1,36 @@
+1) Criar app (Baixa, usa e deleta o create-react-app)
+
+	npx create-react-app my-app
+
+2) Criar componentes, passando seus atributos dinamicamente como props
+
+	* Instalar a lib styled-components
+	* Ver como exemplo o componente Button da aplicacao exemplo
+
+3) Criar rotas
+
+	* Instalar a lib react-router-dom
+	* Definir as rotas no arquivo principal da aplicacao (index.js), como no exemplo abaixo:
+
+	ReactDOM.render(
+	<BrowserRouter>
+		<Switch>
+		<Route path="/" component={App} />
+		</Switch>
+	</BrowserRouter>,
+	document.getElementById('root')
+	);
+
+4) Criar componente inline apenas para testes rapidos com
+
+	() => (<div>Página 404</div>)
+
+5) 
+
+
+
+OBS: Teclas de atalho do VS Code
+
+CTRL + ` Abre/fecha o terminal
+OPTION + seta (cima/baixo) Move a linha
+CTRL + SHIFT + ALT + seta baixo para duplicar linha
