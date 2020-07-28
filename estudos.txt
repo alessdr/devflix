@@ -25,7 +25,9 @@
 
 	() => (<div>Página 404</div>)
 
-5) 
+5) Lib para criar carrossel
+
+	npm i react-slick
 
 
 
