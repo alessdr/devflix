@@ -29,10 +29,12 @@
 
 	npm i react-slick
 
+6) Lib para criar formulariso
 
+	https://formik.org/docs/overview
 
 OBS: Teclas de atalho do VS Code
 
 CTRL + ` Abre/fecha o terminal
 OPTION + seta (cima/baixo) Move a linha
-CTRL + SHIFT + ALT + seta baixo para duplicar linha
+SHIFT + OPTION + seta baixo para duplicar linha
