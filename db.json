@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "ïd": 1,
+            "nome": "Front-end",
+            "descricao": "Criação do visual das aplicações",
+            "cor": "#cbd1ff"
+        },
+        {
+            "ïd": 2,
+            "nome": "Back-end",
+            "descricao": "Criação das regras de negócio",
+            "cor": "#cbd1ff"
+        }
+    ]
+}

@@ -33,6 +33,57 @@
 
 	https://formik.org/docs/overview
 
+7) "Check Style" para JS/JSX
+
+	npx eslint --init
+
+8) Lib para tipagem utilizada pelo ESLint
+
+	npm install prop-types
+
+9) Backend simulado
+
+	a) Instalar json-sever
+
+		npm install json-sever
+	
+	b) Criar o "banco"na raiz do projeto com o nome de db.json
+
+	c) Criar um json no arquivo criado, que represente nossa estrutura de dados
+
+		{
+			"categorias": [
+				{
+					"ïd": 1,
+					"nome": "Front-end",
+					"descricao": "Criação do visual das aplicações",
+					"cor": "#cbd1ff"
+				}
+			]
+		}
+	
+	d) Abrir o arquivo package.json e incluir na sessao "scripts" a linha abaixo
+
+		"server": "json-server --watch db.json --port 8080",
+	
+	e) Executar o server com o comando abaixo
+
+		npm run server
+
+10) Como o comando acima trava o terminal impossibilitando a execucao do "npm start", vamos instalar uma nova lib.
+
+	a) Instalar a lib concurrently
+
+		npm install --save-dev concurrently
+	
+	b) Abrir o arquivo package.json e incluir na sessao "scripts" a linha abaixo, para executar dois comandos simultaneos
+
+		"dev": "concurrently \"react-scripts start\" \"npm run server\"",
+	
+	c) Executar o comando abaixo para subir os dois serviços
+
+		npm run dev
+
 OBS: Teclas de atalho do VS Code
 
 CTRL + ` Abre/fecha o terminal
